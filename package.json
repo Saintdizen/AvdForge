@@ -1,0 +1,87 @@
+{
+  "name": "avdforge",
+  "productName": "AvdForge",
+  "description": "AvdForge",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "debs": "npm install --save --legacy-peer-deps --force",
+    "postinstall": "electron-builder install-app-deps",
+    "linux": "electron-builder --linux",
+    "win": "electron-builder --win",
+    "mac": "electron-builder --mac"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitverse.ru/DethMond/AvdForge.git"
+  },
+  "keywords": [
+    "Tools",
+    "Android"
+  ],
+  "build": {
+    "asar": false,
+    "artifactName": "${name}-${os}-${arch}-${version}.${ext}",
+    "appId": "com.avd.forge",
+    "linux": {
+      "category": "Tools",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "win": {
+      "icon": "resources/icons/app/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "deleteAppDataOnUninstall": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerHeaderIcon": "resources/icons/app/icon.ico",
+      "installerIcon": "resources/icons/app/icon.ico"
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "resources/**/*",
+      "app/**/*"
+    ]
+  },
+  "author": {
+    "name": "Chuvakhin Ivan",
+    "email": "saintdizen@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitverse.ru/DethMond/AvdForge/issues"
+  },
+  "homepage": "https://gitverse.ru/DethMond/AvdForge#readme",
+  "devDependencies": {
+    "electron": "~24.8.8",
+    "electron-builder": "~24.6.4"
+  },
+  "dependencies": {
+    "@electron/remote": "~2.1.3",
+    "appium": "~3.7.0",
+    "appium-inspector-plugin": "~2026.7.1",
+    "appium-uiautomator2-driver": "~8.5.0",
+    "chuijs": "~3.6.5",
+    "decompress": "^4.2.1",
+    "electron-download-manager": "^2.1.2",
+    "fs-extra": "~8.1.0",
+    "semver": "~7.8.5",
+    "sqlite3": "5.1.6"
+  }
+}
