@@ -14,7 +14,7 @@ const Scripts = require('../settings/scripts');
  * чтобы обновиться, пока диалог установки остаётся открытым.
  */
 
-const DEFAULT_AVD_NAME = "Android_Tools_AVD"
+const DEFAULT_AVD_NAME = "AvdForge_AVD"
 const DEFAULT_DEVICE = "medium_phone"
 const DEFAULT_ANDROID_VERSION = "android-34"
 const DEFAULT_IMAGE_TYPE = "google_apis"

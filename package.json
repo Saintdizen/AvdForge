@@ -2,7 +2,7 @@
   "name": "avdforge",
   "productName": "AvdForge",
   "description": "AvdForge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitverse.ru/DethMond/AvdForge.git"
+    "url": "https://github.com/Saintdizen/AvdForge.git"
   },
   "keywords": [
     "Tools",
@@ -26,7 +26,7 @@
       "provider": "github",
       "owner": "saintdizen",
       "private": false,
-      "repo": "tools_trin",
+      "repo": "AvdForge",
       "releaseType": "release"
     },
     "artifactName": "${name}-${os}-${arch}-${version}.${ext}",
@@ -72,9 +72,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://gitverse.ru/DethMond/AvdForge/issues"
+    "url": "https://github.com/Saintdizen/AvdForge/issues"
   },
-  "homepage": "https://gitverse.ru/DethMond/AvdForge#readme",
+  "homepage": "https://github.com/Saintdizen/AvdForge#readme",
   "devDependencies": {
     "electron": "~24.8.8",
     "electron-builder": "~24.6.4"
@@ -84,7 +84,7 @@
     "appium": "~3.7.0",
     "appium-inspector-plugin": "~2026.7.1",
     "appium-uiautomator2-driver": "~8.5.0",
-    "chuijs": "~3.6.5",
+    "chuijs": "~3.7.0",
     "decompress": "^4.2.1",
     "electron-download-manager": "^2.1.2",
     "fs-extra": "~8.1.0",

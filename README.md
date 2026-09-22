@@ -4,7 +4,7 @@
 устанавливает Android SDK и эмулятор, создаёт и удаляет AVD, запускает и останавливает эмуляторы,
 а в центре окна показывает **Appium Inspector** для работы с запущенным эмулятором.
 
-`productName`: `Android_Tools`, версия — в `package.json`.
+`productName`: `AvdForge`, версия — в `package.json`.
 
 ## Что умеет
 
@@ -55,7 +55,7 @@ CI (`.gitverse/workflows/build_linux.yml`) собирает AppImage на push/P
 
 | Поле | Значение по умолчанию | Комментарий |
 | --- | --- | --- |
-| Имя эмулятора (AVD) | `Android_Tools_AVD` | латиница, цифры, точка, дефис, подчёркивание (до 64 символов) |
+| Имя эмулятора (AVD) | `AvdForge_AVD` | латиница, цифры, точка, дефис, подчёркивание (до 64 символов) |
 | Устройство (`avdmanager -d`) | `medium_phone` | идентификатор устройства, например из `avdmanager list device` |
 | Версия Android | `android-34` | список: android-29…android-36 |
 | Тип системного образа | `google_apis` | `google_apis`, `google_apis_playstore`, `default` |
@@ -99,7 +99,7 @@ CI (`.gitverse/workflows/build_linux.yml`) собирает AppImage на push/P
 ## Где хранятся данные
 
 Все компоненты лежат внутри каталога данных приложения (`userData`):
-`~/.config/Android_Tools` в Linux, `%APPDATA%\Android_Tools` в Windows.
+`~/.config/AvdForge` в Linux, `%APPDATA%\AvdForge` в Windows.
 
 | Каталог | Содержимое |
 | --- | --- |
