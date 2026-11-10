@@ -1,0 +1,11 @@
+{
+  "sidebarSize": 260,
+  "rightSize": 689,
+  "dockSize": 260,
+  "sidebarVisible": true,
+  "rightVisible": true,
+  "sidebarPosition": "left",
+  "dockVisible": false,
+  "dockPosition": "bottom",
+  "editorVisible": true
+}

@@ -74,6 +74,7 @@ class AvdDialog {
             justify: "space-between",
             disableMarginChild: true
         })
+        header.setWidth()
         header.setWidth(Styles.SIZE.WEBKIT_FILL)
         header.add(
             new Label({markdownText: "**Эмуляторы**", width: Styles.SIZE.MAX_CONTENT, fontSize: "14pt"}),
